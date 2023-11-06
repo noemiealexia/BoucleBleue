@@ -13,11 +13,11 @@ class Program
         Room Bleue = new Bleue();
         Room Noire = new Noire();
         Room Blanche = new Blanche();
-        Room GardeRobe = new GardeRobe();
+        Room Coffre = new Coffre();
 
         game.Add(Blanche);
         game.Add(Bleue);
-        game.Add(GardeRobe);
+        game.Add(Coffre);
         game.Add(Jaune);
         game.Add(Noire);
         game.Add(Rose);
@@ -26,7 +26,7 @@ class Program
 
         while (!game.IsGameOver())
         {
-            Console.WriteLine("--");
+            Console.WriteLine(" ");
             game.CurrentRoomDescription();
             string? choice = Console.ReadLine()?.ToLower() ?? "";
             Console.Clear();
@@ -34,7 +34,25 @@ class Program
             game.CheckTransition();
         }
 
-        Console.WriteLine("FIN");
+        int Fins= 0;
+
+        if (Jeu.Fin01 == true)
+        {
+            Fins++;
+        }
+        if (Jeu.Fin02 == true) 
+        {
+            Fins ++;        
+        }
+        if (Jeu.Fin03 == true)
+        {
+            Fins++;
+        }
+
+        Console.WriteLine("\n\n\t\tVOUS AVEZ DÉBLOQUÉ " + Fins +" FINS SUR 3.");
         Console.ReadLine();
+        Console.WriteLine("\n\nVeux-tu recommencer, poupée? (o/n)");
+        //loop de recommencer ou non
+
     }
 }

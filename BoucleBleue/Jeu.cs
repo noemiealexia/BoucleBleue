@@ -11,10 +11,14 @@ namespace BoucleBleue
         List<Room>? rooms;
         Room currentRoom;
         internal bool IsGameOver() => isFinished;
-        static bool isFinished;
+        public static bool isFinished = false;
         public static string nextRoom = "";
         public static bool HasRedKey = false;
         public static bool HasBlueKey = false;
+        public static bool Fin01 = false;
+        public static bool Fin02 = false;
+        public static bool Fin03 = false;
+
 
         public Jeu()
         {

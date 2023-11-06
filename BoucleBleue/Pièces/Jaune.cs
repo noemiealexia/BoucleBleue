@@ -13,11 +13,23 @@ namespace BoucleBleue.Pièces
 
         internal override void ViewDescription()
         {
-            Console.WriteLine( "La chambre est jaune, il y a des ours en peluche à tous les coins de la piéce." +
-            "Ils te regardent avec un sourire." +
-            "Il y a une grande commode, des chaises, un ballon gonflable et des petites tables." +
-            " Une nouvelle porte se trouve devant toi." +
-            "[porte blanche] [porte rose]");
+            if (Jeu.HasRedKey)
+            {
+                Console.WriteLine("\n\tLa chambre est jaune, il y a une dizaine d'[ours] en peluche qui t'observent." +
+                "\n\tIls te sourient et te disent bonjour. Ils semblent doux et agressifs." +
+                "\n\tIl y a un grand [coffre] à jouets, des [chaises], un [ballon] gonflable et des petites [tables]." +
+                "\n\tUne [porte blanche] est à l'Ouest, une [porte rose] à l'Est.");
+
+
+            }
+            else
+            {
+                Console.WriteLine("\n\tLa chambre est jaune, il y a une dizaine d'[ours] en peluche qui t'observent." +
+                "\n\tIls ricanent en te regardant. Ils semblent doux et gentils." +
+                "\n\tIl y a un grand [coffre] à jouets, des [chaises], un [ballon] gonflable et des petites [tables]." +
+                "\n\tUne [porte blanche] est à l'Ouest, une [porte rose] à l'Est.");
+            }
+          
         }
 
         internal override void ReceiveChoice(string choice)
@@ -28,30 +40,61 @@ namespace BoucleBleue.Pièces
                     Console.WriteLine("La porte est verrouillée.");
                     break;
                 case "porte rose":
-                    Console.WriteLine("Tu ouvres la porte et entres dans la chambre rose.");
+                    Console.WriteLine("Tu ouvres la porte et entres dans la pièce.");
                     // nextRoomToGo = "Jaune";
                     Jeu.nextRoom = "Rose";
                     break;
-                case "chaises":
-                    Console.WriteLine("Tu t'assoies à côté d'un ours.");
-                    break;
-                case "ballon":
-                    Console.WriteLine("Tu sautes sur le ballon pendant quelques minutes.");
-                    break;
-                case "tables":
-                    Console.WriteLine("Tu montes sur la table et la vue d'en haut te permet de remarquer quelque chose.");
-                    table = true;
-                    break;
-                case "commode":
-                    if (table == true)
+                case "ours":
+                    if (Jeu.HasRedKey)
                     {
-                        Console.WriteLine("Tu pousses la commode pour révéler la petite ouverture inégale que tu as vue quand tu étais monté sur la table. C'est en fait une porte vers une garde-robe secrète.");
+                        Console.WriteLine("\nTu t'agenouilles devant l'ourson bleu.");
+                        Console.WriteLine("\nPeluche: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.\nToi: Pourquoi as-tu fait ça peluche?! J'ai eu peur!\nPeluche: HAHAHAHAHAHAHAHAHAHAHAHA MEURS.\nPeu importe ce que tu essaies de dire à peluche, il ne fait que ricaner comme les autres peluches. Tu te relèves.");
 
-                        Jeu.nextRoom = "GardeRobe";
                     }
                     else
                     {
-                        Console.WriteLine("Tu ouvres les tiroirs de la commode, mais il n'y a rien à l'intérieur.");
+                        Console.WriteLine("\nTu t'agenouilles devant un ourson bleu.");
+                        Console.WriteLine("\nOurs: Bonjour, poupée. Tu es très jolie aujourd'hui.\nToi: Merci Ours. Quel est ton nom?\nOurs: Je m'appelle Peluche. Tout les oursons s'appellent Peluche ici.\nToi: C'est un très joli nom. Mon nom à moi c'est - \nPeluche te coupe.\nPeluche: Je sais qui tu es, boucle.\nToi: Est-ce que c'est la boucle dans mes cheveux qui te l'a dit?\nPeluche: Tu devrais regarder dans le coffre à jouets poupée. Il y a quelque chose pour toi à l'intérieur.\nToi: Pour moi?! Merci Peluche! Je t'adore!");
+                    }
+                    break;
+                case "chaises":
+                    Console.WriteLine("\nTu t'assoies à côté d'un ourson.");
+                    if (Jeu.HasRedKey)
+                    {
+                        Console.WriteLine("La présence à côté de toi est effrayante. L'ourson semble chuchotter un mot en répétition.\n Lorsque tu t'approches pour entendre ce qu'il dit, il se met à crier dans ton oreille.");
+                        for (int i = 20; i >= 0; i--)
+                        {
+                            Console.WriteLine("\n\tMEURS.");
+                        }
+                        Console.WriteLine("\nChoquée, tu te relèves et t'en vas.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nSa présence est calmante. Son regard semble rempli d'amour. Tu te sens joyeuse. Ton coeur de poupée est heureux.");
+
+                    }
+                        break;
+                case "ballon":
+                    Console.WriteLine("\nTu sautes sur le ballon pendant quelques minutes.");
+                    break;
+                case "tables":
+                    Console.WriteLine("\nTu montes sur la table et la vue d'en haut te permet de remarquer une petite clé en arrière du coffre à jouets.");
+                    table = true;
+                    break;
+                case "coffre":
+                    if (Jeu.HasRedKey)
+                    {
+                        Console.WriteLine("\nTu ne veux pas retourner à l'intérieur. Les poupées ne te laisseraient sûrement pas sortir une autre fois.");
+                    }
+                    else if (table == true)
+                    {
+                        Console.WriteLine("\nTu prends la petite clé et tu l'insères dans le coffre à jouet.");
+
+                        Jeu.nextRoom = "Coffre";
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nTu ouvres le coffre à jouets, mais il n'y a rien à l'intérieur.");
                     }
                     break;
                 default:

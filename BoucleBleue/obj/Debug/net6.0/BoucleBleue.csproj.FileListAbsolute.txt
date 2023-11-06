@@ -12,3 +12,17 @@ E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Debug\net6.0\refin
 E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Debug\net6.0\BoucleBleue.pdb
 E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Debug\net6.0\BoucleBleue.genruntimeconfig.cache
 E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Debug\net6.0\ref\BoucleBleue.dll
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\bin\Debug\net6.0\BoucleBleue.exe
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\bin\Debug\net6.0\BoucleBleue.deps.json
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\bin\Debug\net6.0\BoucleBleue.runtimeconfig.json
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\bin\Debug\net6.0\BoucleBleue.dll
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\bin\Debug\net6.0\BoucleBleue.pdb
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\obj\Debug\net6.0\BoucleBleue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\obj\Debug\net6.0\BoucleBleue.AssemblyInfoInputs.cache
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\obj\Debug\net6.0\BoucleBleue.AssemblyInfo.cs
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\obj\Debug\net6.0\BoucleBleue.csproj.CoreCompileInputs.cache
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\obj\Debug\net6.0\BoucleBleue.dll
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\obj\Debug\net6.0\refint\BoucleBleue.dll
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\obj\Debug\net6.0\BoucleBleue.pdb
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\obj\Debug\net6.0\BoucleBleue.genruntimeconfig.cache
+C:\Users\Noemie-Alexia\Desktop\Collège LaSalle\BoucleBleue\BoucleBleue\obj\Debug\net6.0\ref\BoucleBleue.dll
