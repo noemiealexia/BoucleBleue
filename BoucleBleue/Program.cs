@@ -2,23 +2,39 @@
 using BoucleBleue;
 using BoucleBleue.Pièces;
 
-var game = new Jeu();
-game.Add(new Blanche());
-game.Add(new Bleue());
-game.Add(new GardeRobe());
-game.Add(new Jaune());
-game.Add(new Noire());
-game.Add(new Rose());
-
-while (!game.IsGameOver())
+class Program
 {
-    Console.WriteLine("--");
-    Console.WriteLine(game.CurrentRoomDescription);
-    string? choice = Console.ReadLine()?.ToLower() ?? "";
-    Console.Clear();
-    game.ReceiveChoice(choice);
-}
+    static void Main(string[] args)
+    {
+        var game = new Jeu();
 
-            Console.WriteLine("FIN");
-            Console.ReadLine();
-     
+        Room Rose = new Rose();
+        Room Jaune = new Jaune();
+        Room Bleue = new Bleue();
+        Room Noire = new Noire();
+        Room Blanche = new Blanche();
+        Room GardeRobe = new GardeRobe();
+
+        game.Add(Blanche);
+        game.Add(Bleue);
+        game.Add(GardeRobe);
+        game.Add(Jaune);
+        game.Add(Noire);
+        game.Add(Rose);
+
+        game.SetCurrentRoom(Rose);
+
+        while (!game.IsGameOver())
+        {
+            Console.WriteLine("--");
+            game.CurrentRoomDescription();
+            string? choice = Console.ReadLine()?.ToLower() ?? "";
+            Console.Clear();
+            game.ReceiveChoice(choice);
+            game.CheckTransition();
+        }
+
+        Console.WriteLine("FIN");
+        Console.ReadLine();
+    }
+}

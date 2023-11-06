@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace BoucleBleue
 {
-    internal abstract class Room
+    public abstract class Room
     {
-        internal abstract string CreateDescription();
+        public string nextRoomToGo ="";
+        internal abstract void ViewDescription();
         internal abstract void ReceiveChoice(string choice);
     }
 }

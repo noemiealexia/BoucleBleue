@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace BoucleBleue.Pièces
 {
-    internal class Blanche
+    internal class Blanche : Room
     {
+        internal override void ViewDescription()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal override void ReceiveChoice(string choice)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
