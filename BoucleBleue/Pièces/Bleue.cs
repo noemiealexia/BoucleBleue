@@ -12,7 +12,7 @@ namespace BoucleBleue.Pièces
         internal override void ViewDescription()
         {
             Console.WriteLine("\n\tTu te retrouves dans une pièce peinturée tout en bleu." +
-                "\n\tLes lumières clignottent. Tu ressens un effroiement, mais tu ne sais pas pourquoi." +
+                "\n\tLes lumières clignotent. Tu ressens un effroiement, mais tu ne sais pas pourquoi." +
                 "\n\tLa pièce semble complètement vide, excepté une [poupée] assise sur une chaise. Son regard est aussi vide que la pièce." +
                 "\n\tCette salle t'engenre un malaise profond. Tu veux partir." +
                 "\n\tIl n'y a pourtant rien qui cloche à première vue. Tu ne sais pas pourquoi tu te sens comme ça." +
@@ -25,29 +25,29 @@ namespace BoucleBleue.Pièces
             switch (choice)
             {
                 case "poupée":
-                    Console.WriteLine("\nLa poupée est magnifique. Elle a une belle boule bleue dans ses cheveux." +
+                    Console.WriteLine("\nLa poupée est magnifique. Elle a une belle boucle bleue dans ses cheveux." +
                         "\nTu l'observes. Elle ne dit rien. Ses yeux sont vers toi, mais elle ne semble pas te regarder." +
                         "\nToi: Quel est ton nom poupée?" +
                         "\nPoupée: ..." +
                         "\nToi: Est-ce que je peux t'aider? Où sommes-nous?" +
                         "\nPoupée: ..." +
-                        "\nTu saisies la poupée dans tes bras, elle semble t'appercevoir pour la première fois. Elle sourit." +
+                        "\nTu saisies la poupée dans tes bras, elle semble t'apercevoir pour la première fois. Elle sourit." +
                         "\nPoupée: Bonjour toi! Wow comme tu es jolie! Je suis jalouse!" +
                         "\nToi: Est-ce que ça va? Cet endroit est étrange. Je ne sais pas où je suis." +
                         "\nPoupée: Mais voyons Boucle, tu es chez toi." +
                         "\nLe sourire de la poupée disparait. Ses yeux deviennent rouges et pleins de sang." +
-                        "\nPoupée: TUE MOI. JE T'EN SUPPLIE." +
+                        "\nPoupée: TUE-MOI. JE T'EN SUPPLIE." +
                         "\nLa poupée qui s'était mise à crier quelques secondes plus tôt retrouve son regard vide. Elle est calme. Ses yeux sont de nouveau normaux." +
                         "\nToi: Quoi?" +
                         "\nPoupée: J'ai dit, tu es chez toi. Comme je suis chez moi. Nous sommes tous les deux où nous devons être." +
                         "\nToi: ... Pourquoi veux-tu que je te tues?" +
                         "\nLa poupée semble horrifiée." +
-                        "\nPoupée: Me tuer?! Mais bien sur que non, nous sommes bien ici ne trouves-tu pas?" +
+                        "\nPoupée: Me tuer?! Mais bien sûr que non, nous sommes bien ici, ne trouves-tu pas?" +
                         "\n[Oui] ou [Non]?");
                     break;
                 case "oui":
-                     Console.WriteLine("\nPoupée: Bien sur, hihihihihi. Quelles drôles d'idées tu as, boucle." +
-                         "\nToi: Tu sembles me connaitres. Est-ce qu'on s'est déjà rencontré?");
+                     Console.WriteLine("\nPoupée: Bien sûr, hihihihihi. Quelles drôles d'idées tu as, boucle." +
+                         "\nToi: Tu sembles me connaître. Est-ce qu'on s'est déjà rencontré?");
                      break;
                 case "non":
                     //image de Boucle bleue creepy

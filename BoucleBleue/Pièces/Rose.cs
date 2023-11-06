@@ -17,16 +17,16 @@ namespace BoucleBleue.Pièces
                     "\n\tElle n'est plus rose. Les murs sont noirs maintenant. " +
                     "\n\tLes lumières qui éclairaient la pièce semblent sombres maintenant. Tu as du mal à voir autour de toi. " +
                     "\n\tLorsque tes yeux s'ajustent, tu vois les fleurs maintenant fannées, leurs pétales sur le sol." +
-                    "\n\tLes papillions qui volaient autour de toi sont morts. Tu regardes les insectes immobiles sur le sol qui ne voleront plus jamais. " +
-                    "\n\tIl n'y a plus de joie dans cette pièce. Tu frissonnes, tu n'as pourant pas froid. Tu te demandes ce qui se passe." +
+                    "\n\tLes papillons qui volaient autour de toi sont morts. Tu regardes les insectes immobiles sur le sol qui ne voleront plus jamais. " +
+                    "\n\tIl n'y a plus de joie dans cette pièce. Tu frissonnes, tu n'as pourtant pas froid. Tu te demandes ce qui se passe." +
                     "\n\tAu sud, tu aperçois la [porte bleue]. À l'ouest, la [porte jaune].\n");
 
             }
             else
             {
                 Console.WriteLine("\n\tTes yeux de poupée s'ouvrent sur une belle chambre rose. " +
-                    "\n\tLa pièce est adornée de beaux meubles qui s'agencent au murs roses." +
-                    "\n\tÀ travers la pièce, de grandes fleurs vibrantes se reposent et des papillions s'excitent tout autour de toi." +
+                    "\n\tLa pièce est adornée de beaux meubles qui s'agencent aux murs roses." +
+                    "\n\tÀ travers la pièce, de grandes fleurs vibrantes se reposent et des papillons s'excitent tout autour de toi." +
                     "\n\tÀ ta droite se trouve une [porte jaune], devant toi une [porte bleue]\n");
 
             }

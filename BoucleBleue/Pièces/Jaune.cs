@@ -54,14 +54,14 @@ namespace BoucleBleue.Pièces
                     else
                     {
                         Console.WriteLine("\nTu t'agenouilles devant un ourson bleu.");
-                        Console.WriteLine("\nOurs: Bonjour, poupée. Tu es très jolie aujourd'hui.\nToi: Merci Ours. Quel est ton nom?\nOurs: Je m'appelle Peluche. Tout les oursons s'appellent Peluche ici.\nToi: C'est un très joli nom. Mon nom à moi c'est - \nPeluche te coupe.\nPeluche: Je sais qui tu es, boucle.\nToi: Est-ce que c'est la boucle dans mes cheveux qui te l'a dit?\nPeluche: Tu devrais regarder dans le coffre à jouets poupée. Il y a quelque chose pour toi à l'intérieur.\nToi: Pour moi?! Merci Peluche! Je t'adore!");
+                        Console.WriteLine("\nOurs: Bonjour, poupée. Tu es très jolie aujourd'hui.\nToi: Merci Ours. Quel est ton nom?\nOurs: Je m'appelle Peluche. Tout les oursons s'appellent Peluche ici.\nToi: C'est un très joli nom. Mon nom à moi c'est - \nPeluche te coupe.\nPeluche: Je sais qui tu es, boucle.\nToi: Est-ce que c'est la boucle dans mes cheveux qui te l'a dit?\nPeluche: Tu devrais regarder dans le coffre à jouets, poupée. Il y a quelque chose pour toi à l'intérieur.\nToi: Pour moi?! Merci Peluche! Je t'adore!");
                     }
                     break;
                 case "chaises":
                     Console.WriteLine("\nTu t'assoies à côté d'un ourson.");
                     if (Jeu.HasRedKey)
                     {
-                        Console.WriteLine("La présence à côté de toi est effrayante. L'ourson semble chuchotter un mot en répétition.\n Lorsque tu t'approches pour entendre ce qu'il dit, il se met à crier dans ton oreille.");
+                        Console.WriteLine("La présence à côté de toi est effrayante. L'ourson semble chuchoter un mot en répétition.\n Lorsque tu t'approches pour entendre ce qu'il dit, il se met à crier dans ton oreille.");
                         for (int i = 20; i >= 0; i--)
                         {
                             Console.WriteLine("\n\tMEURS.");
@@ -88,7 +88,7 @@ namespace BoucleBleue.Pièces
                     }
                     else if (table == true)
                     {
-                        Console.WriteLine("\nTu prends la petite clé et tu l'insères dans le coffre à jouet.");
+                        Console.WriteLine("\nTu prends la petite clé et tu l'insères dans le coffre à jouets.");
 
                         Jeu.nextRoom = "Coffre";
                     }
