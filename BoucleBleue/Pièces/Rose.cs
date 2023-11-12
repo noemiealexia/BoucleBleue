@@ -49,7 +49,6 @@ namespace BoucleBleue.Pièces
                     break;
                 case "porte jaune":
                     Console.WriteLine("\nTu ouvres la porte et entres dans la pièce.");
-                    // nextRoomToGo = "Jaune";
                     Jeu.nextRoom = "Jaune";
                     break;
                 default:

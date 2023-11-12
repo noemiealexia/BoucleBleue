@@ -15,6 +15,9 @@ namespace BoucleBleue
         public static string nextRoom = "";
         public static bool HasRedKey = false;
         public static bool HasBlueKey = false;
+        public static bool HasOrangeKey = false;
+        public static bool HasYellowKey = false;
+        public static bool HasGreenKey = false;
         public static bool Fin01 = false;
         public static bool Fin02 = false;
         public static bool Fin03 = false;

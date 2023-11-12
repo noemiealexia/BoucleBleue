@@ -37,11 +37,17 @@ namespace BoucleBleue.Pièces
             switch (choice)
             {
                 case "porte blanche":
-                    Console.WriteLine("La porte est verrouillée.");
+                    if (Jeu.HasOrangeKey)
+                    {
+                        Console.WriteLine("Tu ouvres la porte et entres dans la pièce.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("La porte est verrouillée.");
+                    }
                     break;
                 case "porte rose":
                     Console.WriteLine("Tu ouvres la porte et entres dans la pièce.");
-                    // nextRoomToGo = "Jaune";
                     Jeu.nextRoom = "Rose";
                     break;
                 case "ours":
@@ -50,6 +56,13 @@ namespace BoucleBleue.Pièces
                         Console.WriteLine("\nTu t'agenouilles devant l'ourson bleu.");
                         Console.WriteLine("\nPeluche: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.\nToi: Pourquoi as-tu fait ça peluche?! J'ai eu peur!\nPeluche: HAHAHAHAHAHAHAHAHAHAHAHA MEURS.\nPeu importe ce que tu essaies de dire à peluche, il ne fait que ricaner comme les autres peluches. Tu te relèves.");
 
+                    }
+                    else if (Jeu.HasYellowKey)
+                    {
+                        Console.WriteLine("Tu coupes le ventre d'un ours en peluche.");
+                        Console.WriteLine("\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 01: POUR TOUJOURS  - - -");
+                        Jeu.Fin01 = true;
+                        Jeu.isFinished = true;
                     }
                     else
                     {

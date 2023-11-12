@@ -29,7 +29,7 @@ namespace BoucleBleue.Pièces
                         "\nLe liquide noir continue de couler autour de toi, tu penses te noyer dedans." +
                         "\nTu te mets à crier." +
                         "\nToi: NON. NON. NON. NON. NON." +
-                        "\nLes peluches ouvrent le courvecle et laisse sortir. Leur sourire est déstabilisant");
+                        "\nLes peluches ouvrent le courvecle et laisse sortir. Leur sourire est déstabilisant.");
                     Jeu.HasRedKey = true;
                     Jeu.nextRoom = "Jaune";
                     break;
@@ -45,7 +45,7 @@ namespace BoucleBleue.Pièces
                     Console.WriteLine("\nIci pour toujours.");
                     for (int i = 10; i >= 0; i--)
                     {
-                        Console.WriteLine("pour toujours.");
+                        Console.WriteLine("Pour toujours.");
                         Console.ReadKey();
                     }
                     Console.WriteLine("\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 01: POUR TOUJOURS - - -");

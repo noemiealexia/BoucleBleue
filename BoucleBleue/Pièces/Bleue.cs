@@ -25,7 +25,16 @@ namespace BoucleBleue.Pièces
             switch (choice)
             {
                 case "poupée":
-                    Console.WriteLine("\nLa poupée est magnifique. Elle a une belle boucle bleue dans ses cheveux." +
+                    if (Jeu.HasYellowKey)
+                    {
+                        Console.WriteLine("Tu coupes le ventre de la poupée.");
+                        Console.WriteLine("\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 02:  - - -");
+                        Jeu.Fin02 = true;
+                        Jeu.isFinished = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nLa poupée est magnifique. Elle a une belle boucle bleue dans ses cheveux." +
                         "\nTu l'observes. Elle ne dit rien. Ses yeux sont vers toi, mais elle ne semble pas te regarder." +
                         "\nToi: Quel est ton nom poupée?" +
                         "\nPoupée: ..." +
@@ -44,6 +53,9 @@ namespace BoucleBleue.Pièces
                         "\nLa poupée semble horrifiée." +
                         "\nPoupée: Me tuer?! Mais bien sûr que non, nous sommes bien ici, ne trouves-tu pas?" +
                         "\n[Oui] ou [Non]?");
+
+                        Jeu.HasGreenKey = true;
+                    }
                     break;
                 case "oui":
                      Console.WriteLine("\nPoupée: Bien sûr, hihihihihi. Quelles drôles d'idées tu as, boucle." +
@@ -51,10 +63,10 @@ namespace BoucleBleue.Pièces
                      break;
                 case "non":
                     //image de Boucle bleue creepy
+                    Jeu.HasOrangeKey = true;
                     break;
                 case "porte rose":
                     Console.WriteLine("Tu ouvres la porte et entre dans la chambre rose.");
-                    // nextRoomToGo = "Jaune";
                     Jeu.nextRoom = "Rose";
                     break;
                 default:

@@ -36,22 +36,22 @@ class Program
 
         int Fins= 0;
 
-        if (Jeu.Fin01 == true)
+        if (Jeu.Fin01 == true) //fin terrifiante = pour toujours
         {
             Fins++;
         }
-        if (Jeu.Fin02 == true) 
+        if (Jeu.Fin02 == true) //fin normale
         {
             Fins ++;        
         }
-        if (Jeu.Fin03 == true)
+        if (Jeu.Fin03 == true) //vraie fin
         {
             Fins++;
         }
 
         Console.WriteLine("\n\n\t\tVOUS AVEZ DÉBLOQUÉ " + Fins +" FINS SUR 3.");
         Console.ReadLine();
-        Console.WriteLine("\n\nVeux-tu recommencer, poupée? (o/n)");
+        Console.WriteLine("\n\nVeux-tu recommencER, poupée? (o/n)");
         //loop de recommencer ou non
 
     }
