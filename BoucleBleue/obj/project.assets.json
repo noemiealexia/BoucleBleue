@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Noemie-Alexia\\.nuget\\packages\\": {}
+    "C:\\Users\\Le Cherng\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Noemie-Alexia\\Desktop\\Collège LaSalle\\BoucleBleue\\BoucleBleue\\BoucleBleue.csproj",
+      "projectUniqueName": "E:\\Lasalle\\1st semester\\industrie\\BoucleBleue\\BoucleBleue\\BoucleBleue.csproj",
       "projectName": "BoucleBleue",
-      "projectPath": "C:\\Users\\Noemie-Alexia\\Desktop\\Collège LaSalle\\BoucleBleue\\BoucleBleue\\BoucleBleue.csproj",
-      "packagesPath": "C:\\Users\\Noemie-Alexia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Noemie-Alexia\\Desktop\\Collège LaSalle\\BoucleBleue\\BoucleBleue\\obj\\",
+      "projectPath": "E:\\Lasalle\\1st semester\\industrie\\BoucleBleue\\BoucleBleue\\BoucleBleue.csproj",
+      "packagesPath": "C:\\Users\\Le Cherng\\.nuget\\packages\\",
+      "outputPath": "E:\\Lasalle\\1st semester\\industrie\\BoucleBleue\\BoucleBleue\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Noemie-Alexia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Users\\Le Cherng\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
