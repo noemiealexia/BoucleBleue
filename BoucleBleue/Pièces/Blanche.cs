@@ -39,10 +39,22 @@ namespace BoucleBleue.Pièces
                 case "lumière":
                     Console.WriteLine("Tu allumes la lumière et l'intérieur de la pièce est révélé.");
                     break;
-                case "qqch autre?":
-                    Console.WriteLine("\n");
+                case "explorer":
+                    Console.WriteLine("\nVeux-tu aller au [nord], à l'[est], au [sud] ou à l'[ouest]");
                     break;
-                case "mot secret":
+                case "nord":
+                    Console.WriteLine("\nTu sens une grande porte. Beaucoup plus grande que les autres. Elle est vérouillée.");
+                    break;
+                case "est":
+                    Console.WriteLine("\nC'est la porte jaune, d'où tu proviens.");
+                    break;
+                case "sud":
+                    Console.WriteLine("\nIl y a une [porte noire] dans laquelle tu peux entrer.");
+                    break;
+                case "ouest":
+                    Console.WriteLine("\nDans la noirceur, tu mets tes mains sur le mur pour te retrouver.");
+                    break;
+                case "boucle":
                     if (Jeu.HasGreenKey)
                     {
                         Console.WriteLine("\nTrue ending");

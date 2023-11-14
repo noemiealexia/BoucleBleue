@@ -43,7 +43,7 @@ namespace BoucleBleue.Pièces
                     break;
                 case "oui":
                     Console.WriteLine("\nIci pour toujours.");
-                    for (int i = 10; i >= 0; i--)
+                    for (int i = 7; i >= 0; i--)
                     {
                         Console.WriteLine("Pour toujours.");
                         Console.ReadKey();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,7 +41,7 @@ namespace BoucleBleue.Pièces
                         Jeu.HasGreenKey = true;
                         Jeu.HasOrangeKey = true;
                     }
-                    else if (Jeu.HasYellowKey)
+                    else if (Jeu.HasKnife == true)
                     {
                         Console.WriteLine("\nLa poupée voit le couteau que tu as dans les mains. Elle semble excitée." +
                                           "\nPoupée: OUI. TUES MOI." +
@@ -48,9 +49,16 @@ namespace BoucleBleue.Pièces
                                           "\nPoupée: NON. STOP. ÇA FAIT MAL." +
                                           "\nLe ventre de la poupée ne contient rien. Tu essaies ses yeux. La poupée crie de douleur." +
                                           "\nDerrière ses yeux tu trouves une clé en or.");
-                        Console.WriteLine("\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03:  - - -");
-                        Jeu.Fin02 = true;
+                        Jeu.Fin03 = true;
                         Jeu.isFinished = true;
+                    }
+                    else if (Jeu.HasGreenKey == true && Jeu.Fin03 == true)
+                    {
+                        Console.WriteLine("Poupée: BOUCLE.");
+                    }
+                    else if (Jeu.HasGreenKey == true)
+                    {
+                        Console.WriteLine("\nLa poupée a un regard vide. Elle ne répond pas, peu importe ce que tu lui dis.");
                     }
                     else
                     {
@@ -88,14 +96,23 @@ namespace BoucleBleue.Pièces
                     Jeu.HasOrangeKey = true;
                     break;
                 case "non":
-                    //image de Boucle bleue creepy
+
+                    System.Diagnostics.Process.Start(new ProcessStartInfo
+                    {
+                        FileName = "https://i.postimg.cc/4ywGxJKs/IMG-0050.jpg",
+                        UseShellExecute = true
+                    });
                     Console.WriteLine("\nLa musique arrête. Un silence terrifiant t'enveloppe. La poupée ne sourit plus.");
                     for (int i = 3;i >= 0; i--)
                     {
                         Console.WriteLine("\nNous sommes bien ici.");
                     }
                     Console.WriteLine("\nNOUS SOMMES BIEN ICI.");
-                    //image de Boucle sans yeux
+                    System.Diagnostics.Process.Start(new ProcessStartInfo
+                    {
+                        FileName = "https://i.postimg.cc/3RdfvYb3/IMG-0051.jpg",
+                        UseShellExecute = true
+                    });
                     Console.WriteLine("\nTu n'es pas certaine d'où cette voix provient... Es-tu en train de devenir folle?\nEst-ce que ça venait de... ta tête?\nAvant de pouvoir répondre, les mains de la poupée sont autour de ton cou." +
                                       "\nPoupée: MAUDITE BOUCLE. JE VEUX MOURIR.\nLes mains de la poupée serrent ton cou." +
                                       "\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 02: Nous sommes bien ici - - - ");

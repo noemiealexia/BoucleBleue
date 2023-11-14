@@ -1,11 +1,19 @@
 ﻿
 using BoucleBleue;
 using BoucleBleue.Pièces;
+using System.Diagnostics;
 
 class Program
 {
     static void Main(string[] args)
     {
+
+        System.Diagnostics.Process.Start(new ProcessStartInfo
+        {
+            FileName = "https://www.youtube.com/watch?v=yz3YrfQpEM8&list=PLU4ktq2pWONu-4wKzJIXbdvNNDhVxQM3I",
+            UseShellExecute = true
+        });
+
         var game = new Jeu();
 
         Room Rose = new Rose();
@@ -45,11 +53,11 @@ class Program
         {
             Fins ++;        
         }
-        if (Jeu.Fin03 == true) // fin normale
+        if (Jeu.Fin03 == true) // Fin 03 - Fin normale
         {
             Fins++;
         }
-        if (Jeu.Fin04 == true) // vraie fin
+        if (Jeu.Fin04 == true) // Fin 04 - Vraie fin
         { 
             Fins++; 
         }

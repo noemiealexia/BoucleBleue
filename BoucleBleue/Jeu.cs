@@ -18,6 +18,7 @@ namespace BoucleBleue
         public static bool HasOrangeKey = false;
         public static bool HasYellowKey = false;
         public static bool HasGreenKey = false;
+        public static bool HasKnife = false;
         public static bool HasGoldKey = false;
         public static bool Fin01 = false;
         public static bool Fin02 = false;
