@@ -32,12 +32,20 @@ namespace BoucleBleue.Pièces
                                           "\nElle te regarde. Elle semble terrifiée de toi." +
                                           "\nPoupée: Ne me tues pas. Ça fait mal, BOUCLE." +
                                           "\nToi: Quoi? Mais bien sur que non poupée, je ne te tuerais pas." +
-                                          "\nPoupée: Souviens-toi, BOUCLE.");
+                                          "\nPoupée: Souviens-toi, BOUCLE." +
+                                          "\nTu es destabilisée. Tu ne sais pas de quoi la poupée parle. Elle doit être folle." +
+                                          "\nPoupée: Sors d'ici, BOUCLE." +
+                                          "\nElle te remet une petite clé blanche."
+                                          );
+                        Jeu.HasGreenKey = true;
+                        Jeu.HasOrangeKey = true;
                     }
                     else if (Jeu.HasYellowKey)
                     {
-                        Console.WriteLine("\nLa poupée voit ");
-                        Console.WriteLine("\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 02:  - - -");
+                        Console.WriteLine("\nLa poupée voit le couteau que tu as dans les mains. Elle semble excitée." +
+                                          "\nPoupée: OUI. TUES MOI." +
+                                          "\n");
+                        Console.WriteLine("\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03:  - - -");
                         Jeu.Fin02 = true;
                         Jeu.isFinished = true;
                     }
@@ -71,7 +79,9 @@ namespace BoucleBleue.Pièces
                          "\nToi: Tu sembles me connaître. Est-ce qu'on s'est déjà rencontré?" +
                          "\nDu sang coule des yeux de la poupée." +
                          "\nPoupée: TUES-MOI." +
-                         "\nLa poupée semble complètement différente. Elle crie et le sang abondant coulant de ses yeux la rend terrifiante.\nTu recules tranquillement, continuer de lui parler n'est pas une bonne idée.");
+                         "\nLa poupée semble complètement différente. Elle crie et le sang abondant coulant de ses yeux la rend terrifiante.\nTu recules tranquillement, continuer de lui parler n'est pas une bonne idée." +
+                         "\nTu te retournes vers la poupée lorsque tu entends un objet métallique tomber au sol." +
+                         "\nElle semble de retour à la normale. Une petite clé blanche est par terre. Tu la prends.");
                     Jeu.HasOrangeKey = true;
                     break;
                 case "non":
