@@ -44,7 +44,10 @@ namespace BoucleBleue.Pièces
                     {
                         Console.WriteLine("\nLa poupée voit le couteau que tu as dans les mains. Elle semble excitée." +
                                           "\nPoupée: OUI. TUES MOI." +
-                                          "\n");
+                                          "\nTu coupes le ventre de la poupée. Elle semble regretter ses mots immédiatement." +
+                                          "\nPoupée: NON. STOP. ÇA FAIT MAL." +
+                                          "\nLe ventre de la poupée ne contient rien. Tu essaies ses yeux. La poupée crie de douleur." +
+                                          "\nDerrière ses yeux tu trouves une clé en or.");
                         Console.WriteLine("\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03:  - - -");
                         Jeu.Fin02 = true;
                         Jeu.isFinished = true;
