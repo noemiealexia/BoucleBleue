@@ -50,7 +50,7 @@ namespace BoucleBleue.Pièces
                                           "\nLe ventre de la poupée ne contient rien. Tu essaies ses yeux. La poupée crie de douleur." +
                                           "\nDerrière ses yeux tu trouves une clé en or.");
                         Jeu.Fin03 = true;
-                        Jeu.isFinished = true;
+                        Jeu.HasGoldKey = true;
                     }
                     else if (Jeu.HasGreenKey == true && Jeu.Fin03 == true)
                     {

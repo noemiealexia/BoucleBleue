@@ -29,15 +29,12 @@ namespace BoucleBleue.Pièces
             switch (choice)
             {
                 case "porte noire":
-                    Console.WriteLine("Tu ouvres la porte et entres dans la pièce.");
+                    Console.WriteLine("\nTu ouvres la porte et entres dans la pièce.");
                     Jeu.nextRoom = "Noire";
                     break;
                 case "porte jaune":
-                    Console.WriteLine("Tu ouvres la porte et entres dans la pièce.");
+                    Console.WriteLine("\nTu ouvres la porte et entres dans la pièce.");
                     Jeu.nextRoom = "Jaune";
-                    break;
-                case "lumière":
-                    Console.WriteLine("Tu allumes la lumière et l'intérieur de la pièce est révélé.");
                     break;
                 case "explorer":
                     Console.WriteLine("\nVeux-tu aller au [nord], à l'[est], au [sud] ou à l'[ouest]");
