@@ -13,6 +13,7 @@ namespace BoucleBleue.Pièces
         {
             Console.WriteLine("\n\tTu te retrouves dans une pièce peinturée tout en bleu." +
                 "\n\tLes lumières clignotent. Tu ressens un effroiement, mais tu ne sais pas pourquoi." +
+                "\n\tUne petite musique rentit dans la pièce. On dirait une chanson venant d'une boîte à musique." +
                 "\n\tLa pièce semble complètement vide, excepté une [poupée] assise sur une chaise. Son regard est aussi vide que la pièce." +
                 "\n\tCette salle t'engenre un malaise profond. Tu veux partir." +
                 "\n\tIl n'y a pourtant rien qui cloche à première vue. Tu ne sais pas pourquoi tu te sens comme ça." +
@@ -25,9 +26,17 @@ namespace BoucleBleue.Pièces
             switch (choice)
             {
                 case "poupée":
-                    if (Jeu.HasYellowKey)
+                    if (Jeu.Fin03 == true)
                     {
-                        Console.WriteLine("Tu coupes le ventre de la poupée.");
+                        Console.WriteLine("\nLa poupée est magnifique. Elle a une belle boucle bleue dans ses cheveux." +
+                                          "\nElle te regarde. Elle semble terrifiée de toi." +
+                                          "\nPoupée: Ne me tues pas. Ça fait mal, BOUCLE." +
+                                          "\nToi: Quoi? Mais bien sur que non poupée, je ne te tuerais pas." +
+                                          "\nPoupée: Souviens-toi, BOUCLE.");
+                    }
+                    else if (Jeu.HasYellowKey)
+                    {
+                        Console.WriteLine("\nLa poupée voit ");
                         Console.WriteLine("\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 02:  - - -");
                         Jeu.Fin02 = true;
                         Jeu.isFinished = true;
@@ -59,11 +68,27 @@ namespace BoucleBleue.Pièces
                     break;
                 case "oui":
                      Console.WriteLine("\nPoupée: Bien sûr, hihihihihi. Quelles drôles d'idées tu as, boucle." +
-                         "\nToi: Tu sembles me connaître. Est-ce qu'on s'est déjà rencontré?");
-                     break;
+                         "\nToi: Tu sembles me connaître. Est-ce qu'on s'est déjà rencontré?" +
+                         "\nDu sang coule des yeux de la poupée." +
+                         "\nPoupée: TUES-MOI." +
+                         "\nLa poupée semble complètement différente. Elle crie et le sang abondant coulant de ses yeux la rend terrifiante.\nTu recules tranquillement, continuer de lui parler n'est pas une bonne idée.");
+                    Jeu.HasOrangeKey = true;
+                    break;
                 case "non":
                     //image de Boucle bleue creepy
-                    Jeu.HasOrangeKey = true;
+                    Console.WriteLine("\nLa musique arrête. Un silence terrifiant t'enveloppe. La poupée ne sourit plus.");
+                    for (int i = 3;i >= 0; i--)
+                    {
+                        Console.WriteLine("\nNous sommes bien ici.");
+                    }
+                    Console.WriteLine("\nNOUS SOMMES BIEN ICI.");
+                    //image de Boucle sans yeux
+                    Console.WriteLine("\nTu n'es pas certaine d'où cette voix provient... Es-tu en train de devenir folle?\nEst-ce que ça venait de... ta tête?\nAvant de pouvoir répondre, les mains de la poupée sont autour de ton cou." +
+                                      "\nPoupée: MAUDITE BOUCLE. JE VEUX MOURIR.\nLes mains de la poupée serrent ton cou." +
+                                      "\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 02: Nous sommes bien ici - - - ");
+
+                    Jeu.Fin02 = true;
+                    Jeu.isFinished = true;
                     break;
                 case "porte rose":
                     Console.WriteLine("Tu ouvres la porte et entre dans la chambre rose.");

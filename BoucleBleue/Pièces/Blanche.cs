@@ -18,7 +18,9 @@ namespace BoucleBleue.Pièces
             }
             else
             {
-                Console.WriteLine("description premiere version");
+                Console.WriteLine("\n\tLa pièce est complètement sombre." +
+                                  "\n\tTu ne vois que la [porte jaune] derrière toi." +
+                                  "\n\tTu pourrais aussi [explorer].");
             }
         }
 
