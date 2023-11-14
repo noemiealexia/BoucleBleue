@@ -27,7 +27,7 @@ namespace BoucleBleue.Pièces
             switch (choice)
             {
                 case "poupée":
-                    if (Jeu.Fin03 == true)
+                    if (Jeu.Fin04 == true)
                     {
                         Console.WriteLine("\nLa poupée est magnifique. Elle a une belle boucle bleue dans ses cheveux." +
                                           "\nElle te regarde. Elle semble terrifiée de toi." +
@@ -49,10 +49,9 @@ namespace BoucleBleue.Pièces
                                           "\nPoupée: NON. STOP. ÇA FAIT MAL." +
                                           "\nLe ventre de la poupée ne contient rien. Tu essaies ses yeux. La poupée crie de douleur." +
                                           "\nDerrière ses yeux tu trouves une clé en or.");
-                        Jeu.Fin03 = true;
                         Jeu.HasGoldKey = true;
                     }
-                    else if (Jeu.HasGreenKey == true && Jeu.Fin03 == true)
+                    else if (Jeu.HasGreenKey == true && Jeu.Fin04 == true)
                     {
                         Console.WriteLine("Poupée: BOUCLE.");
                     }

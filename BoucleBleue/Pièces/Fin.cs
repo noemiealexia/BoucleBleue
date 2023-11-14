@@ -6,22 +6,11 @@ using System.Threading.Tasks;
 
 namespace BoucleBleue.Pièces
 {
-    internal class Blanche : Room
+    internal class Fin : Room
     {
         internal override void ViewDescription()
         {
-            if (Jeu.HasYellowKey)
-            {
                 Console.WriteLine("description deuxieme version");
-
-
-            }
-            else
-            {
-                Console.WriteLine("\n\tLa pièce est complètement sombre." +
-                                  "\n\tTu ne vois que la [porte jaune] derrière toi." +
-                                  "\n\tTu pourrais aussi [explorer].");
-            }
         }
 
         internal override void ReceiveChoice(string choice)

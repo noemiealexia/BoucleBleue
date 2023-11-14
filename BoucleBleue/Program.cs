@@ -22,6 +22,7 @@ class Program
         Room Noire = new Noire();
         Room Blanche = new Blanche();
         Room Coffre = new Coffre();
+        Room Fin = new Fin();
 
         game.Add(Blanche);
         game.Add(Bleue);
@@ -29,6 +30,7 @@ class Program
         game.Add(Jaune);
         game.Add(Noire);
         game.Add(Rose);
+        game.Add(Fin);
 
         game.SetCurrentRoom(Rose);
 
@@ -53,16 +55,21 @@ class Program
         {
             Fins ++;        
         }
-        if (Jeu.Fin03 == true) // Fin 03 - Fin normale
+        if (Jeu.Fin03 == true) // Fin 03 - Mauvais choix
         {
             Fins++;
         }
-        if (Jeu.Fin04 == true) // Fin 04 - Vraie fin
+        if (Jeu.Fin04 == true) // Fin 04 - Fin normale
         { 
             Fins++; 
         }
+        if (Jeu.Fin05 == true) // Fin 05 - Vraie fin
+        {
+            Fins++;
+        }
 
-        Console.WriteLine("\n\n\t\tVOUS AVEZ DÉBLOQUÉ " + Fins +" FINS SUR 4.");
+
+        Console.WriteLine("\n\n\t\tVOUS AVEZ DÉBLOQUÉ " + Fins +" FINS SUR 5.");
         Console.ReadLine();
         Console.WriteLine("\n\nVeux-tu recommencer, poupée? (o/n)");
         //loop de recommencer ou non
