@@ -15,7 +15,7 @@ namespace BoucleBleue.Pièces
         {
             if (Jeu.HasRedKey)
             {
-                Console.WriteLine("\n\tLa chambre est jaune, il y a une dizaine d'[ours] en peluche qui t'observent." +
+                Console.WriteLine("\n\tLa chambre est jaune, il y a une dizaine d'[oursons] en peluche qui t'observent." +
                 "\n\tIls ricanent en te regardant. Ils semblent menaçants et agressifs." +
                 "\n\tIl y a un grand [coffre] à jouets, des [chaises], un [ballon] gonflable et des petites [tables]." +
                 "\n\tUne [porte blanche] est à l'Ouest, une [porte rose] à l'Est.");
@@ -40,6 +40,7 @@ namespace BoucleBleue.Pièces
                     if (Jeu.HasOrangeKey)
                     {
                         Console.WriteLine("Tu ouvres la porte et entres dans la pièce.");
+                        Jeu.nextRoom = "Blanche";
                     }
                     else
                     {
@@ -66,7 +67,7 @@ namespace BoucleBleue.Pièces
                                           "\nLe dernier son que tu entends est Peluche qui, même éventré, rit de toi." +
                                           "\nPeluche: HAHAHAHAHAHAHAHHAHAHAHAHAHAHAHAHAHAHA.");
 
-                        Console.WriteLine("\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03: Mauvais choix  - - -");
+                        Console.WriteLine("\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03: Mauvais choix  - - -");
                         Jeu.Fin03 = true;
                         Jeu.isFinished = true;
                     }
@@ -80,10 +81,12 @@ namespace BoucleBleue.Pièces
                     Console.WriteLine("\nTu t'assoies à côté d'un ourson.");
                     if (Jeu.HasRedKey)
                     {
-                        Console.WriteLine("La présence à côté de toi est effrayante. L'ourson semble chuchoter un mot en répétition.\n Lorsque tu t'approches pour entendre ce qu'il dit, il se met à crier dans ton oreille.");
-                        for (int i = 20; i >= 0; i--)
+                        Console.WriteLine("\nLa présence à côté de toi est effrayante. L'ourson semble chuchoter un mot en répétition.\nLorsque tu t'approches pour entendre ce qu'il dit, il se met à crier dans ton oreille.");
+                        for (int i = 7; i >= 0; i--)
                         {
+
                             Console.WriteLine("\n\tMEURS.");
+                            Thread.Sleep(700);
                         }
                         Console.WriteLine("\nChoquée, tu te relèves et t'en vas.");
                     }

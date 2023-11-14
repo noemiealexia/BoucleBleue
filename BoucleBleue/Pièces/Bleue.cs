@@ -16,7 +16,7 @@ namespace BoucleBleue.Pièces
                 "\n\tLes lumières clignotent. Tu ressens un effroiement, mais tu ne sais pas pourquoi." +
                 "\n\tUne petite musique rentit dans la pièce. On dirait une chanson venant d'une boîte à musique." +
                 "\n\tLa pièce semble complètement vide, excepté une [poupée] assise sur une chaise. Son regard est aussi vide que la pièce." +
-                "\n\tCette salle t'engenre un malaise profond. Tu veux partir." +
+                "\n\tCette salle t'engenre un malaise profond. Tu veux partir. La seule issue est la [porte rose] derrière toi." +
                 "\n\tIl n'y a pourtant rien qui cloche à première vue. Tu ne sais pas pourquoi tu te sens comme ça." +
                 "\n\tUne petite voix à l'intérieur de toi te dit de partir de cette pièce le plus vite possible." +
                 "\n\tTu ressens l'anxiété et la panique monter en toi. Dépêches-toi.");
@@ -92,6 +92,11 @@ namespace BoucleBleue.Pièces
                          "\nLa poupée semble complètement différente. Elle crie et le sang abondant coulant de ses yeux la rend terrifiante.\nTu recules tranquillement, continuer de lui parler n'est pas une bonne idée." +
                          "\nTu te retournes vers la poupée lorsque tu entends un objet métallique tomber au sol." +
                          "\nElle semble de retour à la normale. Une petite clé blanche est par terre. Tu la prends.");
+                    System.Diagnostics.Process.Start(new ProcessStartInfo
+                    {
+                        FileName = "https://i.postimg.cc/3RdfvYb3/IMG-0051.jpg",
+                        UseShellExecute = true
+                    });
                     Jeu.HasOrangeKey = true;
                     break;
                 case "non":
@@ -114,7 +119,7 @@ namespace BoucleBleue.Pièces
                     });
                     Console.WriteLine("\nTu n'es pas certaine d'où cette voix provient... Es-tu en train de devenir folle?\nEst-ce que ça venait de... ta tête?\nAvant de pouvoir répondre, les mains de la poupée sont autour de ton cou." +
                                       "\nPoupée: MAUDITE BOUCLE. JE VEUX MOURIR.\nLes mains de la poupée serrent ton cou." +
-                                      "\n\n\t\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 02: Nous sommes bien ici - - - ");
+                                      "\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 02: Nous sommes bien ici - - - ");
 
                     Jeu.Fin02 = true;
                     Jeu.isFinished = true;

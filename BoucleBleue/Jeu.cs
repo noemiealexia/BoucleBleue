@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BoucleBleue
 {
@@ -61,6 +62,8 @@ namespace BoucleBleue
             currentRoom.ReceiveChoice(choice);
             CheckTransition();
         }
+
+
 
         internal static void Finish()
         {
