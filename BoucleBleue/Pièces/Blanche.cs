@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,13 @@ namespace BoucleBleue.Pièces
     {
         internal override void ViewDescription()
         {
-            if (Jeu.HasYellowKey)
+          System.Diagnostics.Process.Start(new ProcessStartInfo
+          {
+            FileName = "https://youtu.be/kFCKgnvelOk?si=i9PWl68_QgnBcadD",
+            UseShellExecute = true
+          });
+
+        if (Jeu.HasYellowKey)
             {
                 Console.WriteLine("\n\tLa pièce est maintenant éclairée. Elle est complètement blanche et sans décoration." +
                                   "\n\tLe mur à l'ouest est recouvert de [sang]." +
@@ -60,7 +67,7 @@ namespace BoucleBleue.Pièces
                     if (Jeu.HasGoldKey)
                     {
                         Console.WriteLine("\nTu utilises la clé en or." +
-                                          "\nTu sors par la porte rouge.\nPourquoi t'es tu réveillée ici? Qui était la poupée que tu as tué?" +
+                                          "\nTu sors par la porte rouge.\nPourquoi t'es tu réveillée ici? Qui était la poupée que tu as tuée?" +
                                           "\nCe sont des questions pour plus tard. Enfin libre." +
                                           "\nTu es enfin sortie et pourtant, l'entité qui te terrifiait est encore présente." +
                                           "\nUne voix te dit que ce n'est pas fini, mais tu ne reconnais pas la voix." +
@@ -101,7 +108,7 @@ namespace BoucleBleue.Pièces
                 case "boucle":
                     Console.WriteLine("\nEn disant le mot boucle, le sang coulant du mur s'éparpille sur tous les autres murs.\nBientôt, il coule même du plafond." +
                                       "\nEnfin, après avoir été recouverte du sang, tu le vois se transformer en bleu.\nTout d'un coup, tout autour de toi est bleu. Les murs, les meubles, ta robe, la boucle dans tes cheveux, ... maintenant bleus." +
-                                      "\nTu ne te sens pas bien et tu t'évanouis");
+                                      "\nTu ne te sens pas bien et tu t'évanouis.");
                     Console.WriteLine("\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 05: Vraie fin - - -");
                     Jeu.nextRoom = "Fin";
                     break;

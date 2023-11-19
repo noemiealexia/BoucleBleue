@@ -13,7 +13,7 @@ namespace BoucleBleue.Pièces
         internal override void ViewDescription()
         {
       
-                Console.WriteLine("\n\n\tTes yeux de poupée s'ouvrent sur une chambre bleue. Les lumières clignottent et une chanson de boîte à musique retentit." +
+                Console.WriteLine("\n\n\tTes yeux de poupée s'ouvrent sur une chambre bleue. Les lumières clignotent et une chanson de boîte à musique retentit." +
                     "\n\tTu es assise sur une chaise et tu attends." +
                     "\n\tUne poupée arrive vers toi. Elle te ressemble. Elle est identique à toi." +
                     "\n\tC'est toi. La toi du futur, la toi du passé." +

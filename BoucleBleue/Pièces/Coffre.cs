@@ -33,7 +33,7 @@ namespace BoucleBleue.Pièces
                     Jeu.HasRedKey = true;
                     Jeu.nextRoom = "Jaune";
                     break;
-                case "clé":
+                case "cle":
                     Console.WriteLine("\nTu prends la clé bleue." +
                     "\nTu sens une goutte tomber sur ta joue. Tu y touches, le liquide est visceux et noir. Tu ne sais pas c'est quoi." +
                     "\nLorsque tes yeux s'ajustent à la noirceur, tu remarques des mots engravés dans le coffre." +

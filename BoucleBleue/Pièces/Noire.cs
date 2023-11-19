@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace BoucleBleue.Pièces
 {
     internal class Noire : Room
-    {
+    { 
+
         internal override void ViewDescription()
         {
             Console.WriteLine("\n\tLa pièce est peinturée de noir. L'atmosphère est horrible." +
@@ -30,6 +31,12 @@ namespace BoucleBleue.Pièces
                     break;
                 case "couteau":
                     Console.WriteLine("\nTu prends le couteau.");
+                    Console.WriteLine("\t\t ****** ");
+                    Console.WriteLine("\t\t *   * ");
+                    Console.WriteLine("\t\t *  * ");
+                    Console.WriteLine("\t\t * * ");
+                    Console.WriteLine("\t\t ** ");
+                    Console.WriteLine("\t\t * ");
                     Jeu.HasKnife = true;
                     break;
                 case "note":
@@ -62,12 +69,12 @@ namespace BoucleBleue.Pièces
                                          "\nTu ressens même une haine envers toi. Tu recules doucement.");
                     }
                     break;
-                case "énigme":
+                case "enigme":
                     Console.WriteLine("\nSur le mur est écrit: " +
                                       "\n\tPlus je suis courte, plus je suis mauvaise. Plus je suis mauvaise, plus je trahis." +
                                       "\n\tQui suis-je?");
                     break;
-                case "mémoire":
+                case "memoire":
                     Console.WriteLine("\nTu entends un clic retentir de la pièce blanche.");
                     Jeu.HasYellowKey = true;
                     break;

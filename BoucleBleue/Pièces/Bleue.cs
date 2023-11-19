@@ -12,6 +12,11 @@ namespace BoucleBleue.Pièces
     {
         internal override void ViewDescription()
         {
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.youtube.com/watch?v=MkAsMSG69MI",
+                UseShellExecute = true
+            });
             Console.WriteLine("\n\tTu te retrouves dans une pièce peinturée tout en bleu." +
                 "\n\tLes lumières clignotent. Tu ressens un effroiement, mais tu ne sais pas pourquoi." +
                 "\n\tUne petite musique rentit dans la pièce. On dirait une chanson venant d'une boîte à musique." +
@@ -26,7 +31,7 @@ namespace BoucleBleue.Pièces
         {
             switch (choice)
             {
-                case "poupée":
+                case "poupee":
                     if (Jeu.Fin04 == true)
                     {
                         Console.WriteLine("\nLa poupée est magnifique. Elle a une belle boucle bleue dans ses cheveux." +
@@ -44,7 +49,7 @@ namespace BoucleBleue.Pièces
                     else if (Jeu.HasKnife == true)
                     {
                         Console.WriteLine("\nLa poupée voit le couteau que tu as dans les mains. Elle semble excitée." +
-                                          "\nPoupée: OUI. TUES MOI." +
+                                          "\nPoupée: OUI. TUES-MOI." +
                                           "\nTu coupes le ventre de la poupée. Elle semble regretter ses mots immédiatement." +
                                           "\nPoupée: NON. STOP. ÇA FAIT MAL." +
                                           "\nLe ventre de la poupée ne contient rien. Tu essaies ses yeux. La poupée crie de douleur." +

@@ -62,8 +62,8 @@ namespace BoucleBleue.Pièces
                     {
                         Console.WriteLine("\nTu t'approches de Peluche avec ton couteau derrière le dos." +
                                           "\nLes oursons ricanent toujours. Lorsque Peluche se rend compte de ce que tu t'apprêtes de faire, il est trop tard." +
-                                          "\nTu lui coupes le ventre et regarde à l'intérieur, il n'y a rien." +
-                                          "\nLes autres oursons te saute dessus. Ils prennent ton couteau et te tranchent la gorge." +
+                                          "\nTu lui coupes le ventre et regardes à l'intérieur, il n'y a rien." +
+                                          "\nLes autres oursons te sautent dessus. Ils prennent ton couteau et te tranchent la gorge." +
                                           "\nLe dernier son que tu entends est Peluche qui, même éventré, rit de toi." +
                                           "\nPeluche: HAHAHAHAHAHAHAHHAHAHAHAHAHAHAHAHAHAHA.");
 
