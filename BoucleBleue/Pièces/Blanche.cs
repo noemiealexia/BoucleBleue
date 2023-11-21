@@ -11,11 +11,6 @@ namespace BoucleBleue.Pièces
     {
         internal override void ViewDescription()
         {
-          System.Diagnostics.Process.Start(new ProcessStartInfo
-          {
-            FileName = "https://youtu.be/kFCKgnvelOk?si=i9PWl68_QgnBcadD",
-            UseShellExecute = true
-          });
 
         if (Jeu.HasYellowKey)
             {

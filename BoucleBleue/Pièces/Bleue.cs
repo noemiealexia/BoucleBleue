@@ -12,11 +12,6 @@ namespace BoucleBleue.Pièces
     {
         internal override void ViewDescription()
         {
-            System.Diagnostics.Process.Start(new ProcessStartInfo
-            {
-                FileName = "https://www.youtube.com/watch?v=MkAsMSG69MI",
-                UseShellExecute = true
-            });
             Console.WriteLine("\n\tTu te retrouves dans une pièce peinturée tout en bleu." +
                 "\n\tLes lumières clignotent. Tu ressens un effroiement, mais tu ne sais pas pourquoi." +
                 "\n\tUne petite musique rentit dans la pièce. On dirait une chanson venant d'une boîte à musique." +
