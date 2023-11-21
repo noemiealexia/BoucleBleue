@@ -102,6 +102,7 @@ class Program
                 Jeu.Fin03 = false;
                 Jeu.Fin04 = false;
                 Jeu.Fin05 = false;
+                Jeu.SeenEnigme = false;
             }
             else
             {
