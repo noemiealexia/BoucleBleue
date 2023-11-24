@@ -1,0 +1,14 @@
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\bin\Release\net6.0\BoucleBleue.exe
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\bin\Release\net6.0\BoucleBleue.deps.json
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\bin\Release\net6.0\BoucleBleue.runtimeconfig.json
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\bin\Release\net6.0\BoucleBleue.dll
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\bin\Release\net6.0\BoucleBleue.pdb
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Release\net6.0\BoucleBleue.GeneratedMSBuildEditorConfig.editorconfig
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Release\net6.0\BoucleBleue.AssemblyInfoInputs.cache
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Release\net6.0\BoucleBleue.AssemblyInfo.cs
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Release\net6.0\BoucleBleue.csproj.CoreCompileInputs.cache
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Release\net6.0\BoucleBleue.dll
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Release\net6.0\refint\BoucleBleue.dll
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Release\net6.0\BoucleBleue.pdb
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Release\net6.0\BoucleBleue.genruntimeconfig.cache
+E:\Lasalle\1st semester\industrie\BoucleBleue\BoucleBleue\obj\Release\net6.0\ref\BoucleBleue.dll

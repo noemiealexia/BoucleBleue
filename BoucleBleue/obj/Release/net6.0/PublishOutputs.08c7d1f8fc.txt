@@ -1,0 +1,5 @@
+E:\Lasalle\1st semester\industrie\BoucleBleue.exe
+E:\Lasalle\1st semester\industrie\BoucleBleue.dll
+E:\Lasalle\1st semester\industrie\BoucleBleue.deps.json
+E:\Lasalle\1st semester\industrie\BoucleBleue.runtimeconfig.json
+E:\Lasalle\1st semester\industrie\BoucleBleue.pdb
