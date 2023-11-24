@@ -31,7 +31,13 @@ namespace BoucleBleue.Pièces
                     break;
                 case "couteau":
                     Console.WriteLine("\nTu prends le couteau.");
-                    Console.WriteLine("\t\t ****** ");
+                    Console.WriteLine("\t\t ** ");
+                    Console.WriteLine("\t\t ** ");
+                    Console.WriteLine("\t\t ** ");
+                    Console.WriteLine("\t\t ** ");
+                    Console.WriteLine("\t\t ** ");
+                    Console.WriteLine("\t\t ******* ");
+                    Console.WriteLine("\t\t *    * ");
                     Console.WriteLine("\t\t *   * ");
                     Console.WriteLine("\t\t *  * ");
                     Console.WriteLine("\t\t * * ");
@@ -52,7 +58,7 @@ namespace BoucleBleue.Pièces
                     Console.WriteLine("\nTu sais maintenant ce que tu dois faire, mais qui devrais-tu tuer?");
                     break;
                 case "mannequin":
-                    if (Jeu.HasKnife)
+                    if (Jeu.HasKnife == true)
                     {
                        Console.WriteLine("\nTu coupes le ventre du mannequin." +
                                          "\nAu lieu de mourir, une tête pousse du cou du mannequin." +
@@ -61,6 +67,13 @@ namespace BoucleBleue.Pièces
                        Console.WriteLine("\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03: Mauvais choix  - - -");
                        Jeu.Fin03 = true;
                        Jeu.isFinished = true;
+                    }
+                    else if (Jeu.SeenEnigme == true)
+                    {
+                        Console.WriteLine("\nTu regardes le mannequin sans tête. Peut-être qu'il pourrait t'aider?" +
+                                          "\nToi: Connais-tu la réponse de l'énigme, mannequin?" +
+                                          "\nMannequin: UTILISES TA MÉMOIRE." +
+                                          "\nTu comprends que le mannequin t'a donné un indice.");
                     }
                     else
                     {
@@ -71,8 +84,9 @@ namespace BoucleBleue.Pièces
                     break;
                 case "enigme":
                     Console.WriteLine("\nSur le mur est écrit: " +
-                                      "\n\tPlus je suis courte, plus je suis mauvaise. Plus je suis mauvaise, plus je trahis." +
-                                      "\n\tQui suis-je?");
+                                      "\nPlus je suis courte, plus je suis mauvaise. Plus je suis mauvaise, plus je trahis." +
+                                      "\nQui suis-je?");
+                    Jeu.SeenEnigme = true;
                     break;
                 case "memoire":
                     Console.WriteLine("\nTu entends un clic retentir de la pièce blanche.");

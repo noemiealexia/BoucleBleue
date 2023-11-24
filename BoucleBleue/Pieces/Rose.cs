@@ -12,11 +12,7 @@ namespace BoucleBleue.Pièces
     {
         internal override void ViewDescription()
         {
-            System.Diagnostics.Process.Start(new ProcessStartInfo
-            {
-                FileName = "https://youtu.be/Zkk8SxtmwdM?si=qmqskzfhGHnzdFtp",
-                UseShellExecute = true
-            });
+
             if (Jeu.HasRedKey)
             {
                 Console.WriteLine("\n\tTu retournes dans la chambre rose. " +
