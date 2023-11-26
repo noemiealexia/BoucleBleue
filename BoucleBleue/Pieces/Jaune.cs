@@ -69,12 +69,13 @@ namespace BoucleBleue.Pièces
 
                         Console.WriteLine("\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03: Mauvais choix  - - -");
                         Jeu.Fin03 = true;
-                        Jeu.isFinished = true;
+                        Jeu.nextRoom = "Noire";
+                        Jeu.HasKnife = false;
                     }
                     else
                     {
                         Console.WriteLine("\nTu t'agenouilles devant un ourson bleu.");
-                        Console.WriteLine("\nOurs: Bonjour, poupée. Tu es très jolie aujourd'hui.\nToi: Merci Ours. Quel est ton nom?\nOurs: Je m'appelle Peluche. Tout les oursons s'appellent Peluche ici.\nToi: C'est un très joli nom. Mon nom à moi c'est - \nPeluche te coupe la parole.\nPeluche: Je sais qui tu es, boucle.\nToi: Est-ce que c'est la boucle dans mes cheveux qui te l'a dit?\nPeluche: Tu devrais regarder dans le coffre à jouets, poupée. Il y a quelque chose pour toi à l'intérieur.\nToi: Pour moi?! Merci Peluche! Je t'adore!");
+                        Console.WriteLine("\nOurs: Bonjour, poupée. Tu es très jolie aujourd'hui.\nToi: Merci Ours. Quel est ton nom?\nOurs: Je m'appelle Peluche. Tous les oursons s'appellent Peluche ici.\nToi: C'est un très joli nom. Mon nom à moi c'est - \nPeluche te coupe la parole.\nPeluche: Je sais qui tu es, boucle.\nToi: Est-ce que c'est la boucle dans mes cheveux qui te l'a dit?\nPeluche: Tu devrais regarder dans le coffre à jouets, poupée. Il y a quelque chose pour toi à l'intérieur.\nToi: Pour moi?! Merci Peluche! Je t'adore!");
                     }
                     break;
                 case "chaises":

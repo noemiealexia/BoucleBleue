@@ -14,7 +14,6 @@ namespace BoucleBleue.Pièces
         {
             Console.WriteLine("\n\tTu te retrouves dans une pièce peinturée tout en bleu." +
                 "\n\tLes lumières clignotent. Tu ressens un effroiement, mais tu ne sais pas pourquoi." +
-                "\n\tUne petite musique rentit dans la pièce. On dirait une chanson venant d'une boîte à musique." +
                 "\n\tLa pièce semble complètement vide, excepté une [poupée] assise sur une chaise. Son regard est aussi vide que la pièce." +
                 "\n\tCette salle t'engenre un malaise profond. Tu veux partir. La seule issue est la [porte rose] derrière toi." +
                 "\n\tIl n'y a pourtant rien qui cloche à première vue. Tu ne sais pas pourquoi tu te sens comme ça." +
@@ -106,7 +105,7 @@ namespace BoucleBleue.Pièces
                         FileName = "https://i.postimg.cc/4ywGxJKs/IMG-0050.jpg",
                         UseShellExecute = true
                     });
-                    Console.WriteLine("\nLa musique arrête. Un silence terrifiant t'enveloppe. La poupée ne sourit plus.");
+                    Console.WriteLine("\nUn silence terrifiant t'enveloppe. La poupée ne sourit plus.");
                     for (int i = 3;i >= 0; i--)
                     {
                         Console.WriteLine("\nNous sommes bien ici.");
@@ -122,7 +121,9 @@ namespace BoucleBleue.Pièces
                                       "\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 02: Nous sommes bien ici - - - ");
 
                     Jeu.Fin02 = true;
-                    Jeu.isFinished = true;
+                    Jeu.nextRoom = "Rose";
+                    Jeu.HasOrangeKey = false;
+                    Jeu.HasGreenKey = false;
                     break;
                 case "porte rose":
                     Console.WriteLine("Tu ouvres la porte et entre dans la chambre rose.");
