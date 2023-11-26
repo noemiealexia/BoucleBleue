@@ -14,6 +14,7 @@ namespace BoucleBleue
         internal bool IsGameOver() => isFinished;
         public static bool isFinished = false;
         public static string nextRoom = "";
+        public static bool Tables = false;
         public static bool HasRedKey = false;
         public static bool HasBlueKey = false;
         public static bool HasOrangeKey = false;

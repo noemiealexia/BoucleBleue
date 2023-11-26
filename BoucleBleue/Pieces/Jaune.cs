@@ -9,8 +9,6 @@ namespace BoucleBleue.Pièces
     internal class Jaune : Room
     {
 
-        bool table = false;
-
         internal override void ViewDescription()
         {
             if (Jeu.HasRedKey)
@@ -69,6 +67,7 @@ namespace BoucleBleue.Pièces
 
                         Console.WriteLine("\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03: Mauvais choix  - - -");
                         Jeu.Fin03 = true;
+                        Console.Clear();
                         Jeu.nextRoom = "Noire";
                         Jeu.HasKnife = false;
                     }
@@ -102,14 +101,14 @@ namespace BoucleBleue.Pièces
                     break;
                 case "tables":
                     Console.WriteLine("\nTu montes sur la table et la vue d'en haut te permet de remarquer une petite clé en arrière du coffre à jouets.");
-                    table = true;
+                    Jeu.Tables = true;
                     break;
                 case "coffre":
                     if (Jeu.HasRedKey)
                     {
                         Console.WriteLine("\nTu ne veux pas retourner à l'intérieur. Les poupées ne te laisseraient sûrement pas sortir une autre fois.");
                     }
-                    else if (table == true)
+                    else if (Jeu.Tables == true)
                     {
                         Console.WriteLine("\nTu prends la petite clé et tu l'insères dans le coffre à jouets.");
 

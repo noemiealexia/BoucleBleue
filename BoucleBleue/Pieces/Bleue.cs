@@ -121,6 +121,7 @@ namespace BoucleBleue.Pièces
                                       "\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 02: Nous sommes bien ici - - - ");
 
                     Jeu.Fin02 = true;
+                    Console.Clear();
                     Jeu.nextRoom = "Rose";
                     Jeu.HasOrangeKey = false;
                     Jeu.HasGreenKey = false;

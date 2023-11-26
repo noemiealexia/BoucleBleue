@@ -180,6 +180,7 @@ class Program
             {
                 Jeu.isFinished = false;
                 Jeu.nextRoom = "";
+                Jeu.Tables = false;
                 Jeu.HasRedKey = false;
                 Jeu.HasBlueKey = false;
                 Jeu.HasOrangeKey = false;

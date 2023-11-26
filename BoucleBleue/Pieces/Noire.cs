@@ -66,6 +66,7 @@ namespace BoucleBleue.Pièces
                                          "\nSes crocs sur ton visage et une haleine horrible sont tes dernières sensations.");
                        Console.WriteLine("\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03: Mauvais choix  - - -");
                        Jeu.Fin03 = true;
+                       Console.Clear();
                        Jeu.nextRoom = "Blanche";
                        Jeu.HasKnife = false;
                        Jeu.HasYellowKey = false;
