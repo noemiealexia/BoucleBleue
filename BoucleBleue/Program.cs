@@ -100,13 +100,15 @@ class Program
         //wavePlayer.Init(loop);
         //wavePlayer.Play();
 
+        System.Diagnostics.Process.Start(new ProcessStartInfo
+        {
+            FileName = "https://www.youtube.com/watch?v=MkAsMSG69MI",
+            UseShellExecute = true
+        });
+
+
         while (recommencer)
         {
-            System.Diagnostics.Process.Start(new ProcessStartInfo
-            {
-                FileName = "https://www.youtube.com/watch?v=MkAsMSG69MI",
-                UseShellExecute = true
-            });
 
             var game = new Jeu();
 
@@ -194,6 +196,7 @@ class Program
                 Jeu.Fin04 = false;
                 Jeu.Fin05 = false;
                 Jeu.SeenEnigme = false;
+                Console.Clear();
             }
             else
             {
