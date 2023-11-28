@@ -9,8 +9,6 @@ namespace BoucleBleue.Pièces
     internal class Jaune : Room
     {
 
-        bool table = false;
-
         internal override void ViewDescription()
         {
             if (Jeu.HasRedKey)
@@ -69,12 +67,14 @@ namespace BoucleBleue.Pièces
 
                         Console.WriteLine("\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03: Mauvais choix  - - -");
                         Jeu.Fin03 = true;
-                        Jeu.isFinished = true;
+                        Console.Clear();
+                        Jeu.nextRoom = "Noire";
+                        Jeu.HasKnife = false;
                     }
                     else
                     {
                         Console.WriteLine("\nTu t'agenouilles devant un ourson bleu.");
-                        Console.WriteLine("\nOurs: Bonjour, poupée. Tu es très jolie aujourd'hui.\nToi: Merci Ours. Quel est ton nom?\nOurs: Je m'appelle Peluche. Tout les oursons s'appellent Peluche ici.\nToi: C'est un très joli nom. Mon nom à moi c'est - \nPeluche te coupe la parole.\nPeluche: Je sais qui tu es, boucle.\nToi: Est-ce que c'est la boucle dans mes cheveux qui te l'a dit?\nPeluche: Tu devrais regarder dans le coffre à jouets, poupée. Il y a quelque chose pour toi à l'intérieur.\nToi: Pour moi?! Merci Peluche! Je t'adore!");
+                        Console.WriteLine("\nOurs: Bonjour, poupée. Tu es très jolie aujourd'hui.\nToi: Merci Ours. Quel est ton nom?\nOurs: Je m'appelle Peluche. Tous les oursons s'appellent Peluche ici.\nToi: C'est un très joli nom. Mon nom à moi c'est - \nPeluche te coupe la parole.\nPeluche: Je sais qui tu es, boucle.\nToi: Est-ce que c'est la boucle dans mes cheveux qui te l'a dit?\nPeluche: Tu devrais regarder dans le coffre à jouets, poupée. Il y a quelque chose pour toi à l'intérieur.\nToi: Pour moi?! Merci Peluche! Je t'adore!");
                     }
                     break;
                 case "chaises":
@@ -101,14 +101,14 @@ namespace BoucleBleue.Pièces
                     break;
                 case "tables":
                     Console.WriteLine("\nTu montes sur la table et la vue d'en haut te permet de remarquer une petite clé en arrière du coffre à jouets.");
-                    table = true;
+                    Jeu.Tables = true;
                     break;
                 case "coffre":
                     if (Jeu.HasRedKey)
                     {
                         Console.WriteLine("\nTu ne veux pas retourner à l'intérieur. Les poupées ne te laisseraient sûrement pas sortir une autre fois.");
                     }
-                    else if (table == true)
+                    else if (Jeu.Tables == true)
                     {
                         Console.WriteLine("\nTu prends la petite clé et tu l'insères dans le coffre à jouets.");
 

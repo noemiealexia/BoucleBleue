@@ -15,9 +15,9 @@ namespace BoucleBleue.Pièces
         if (Jeu.HasYellowKey)
             {
                 Console.WriteLine("\n\tLa pièce est maintenant éclairée. Elle est complètement blanche et sans décoration." +
-                                  "\n\tLe mur à l'ouest est recouvert de [sang]." +
-                                  "\n\tUne grande [porte rouge] semble indiquer la sortie." +
-                                  "\n\tUne [porte noire] est au sud et une [porte jaune] est à l'est.");
+                   "\n\tLe mur à l'ouest est recouvert de [sang]." +
+                   "\n\tUne grande [porte rouge] semble indiquer la sortie." +
+                   "\n\tUne [porte noire] est au sud et une [porte jaune] est à l'est.");
 
 
             }
@@ -54,7 +54,7 @@ namespace BoucleBleue.Pièces
                     Console.WriteLine("\nIl y a une [porte noire] dans laquelle tu peux entrer.");
                     break;
                 case "ouest":
-                    Console.WriteLine("\nDans la noirceur, tu mets tes mains sur le mur pour te retrouver. Tu sens tes mains tachée d'un liquide." +
+                    Console.WriteLine("\nDans la noirceur, tu mets tes mains sur le mur pour te retrouver. Tu sens tes mains tachées d'un liquide." +
                                       "\nTu les mets près de ton visage et tu réalises que c'est du sang." +
                                       "\nLe mur est couvert de sang. Tu recules.");
                     break;
@@ -62,7 +62,7 @@ namespace BoucleBleue.Pièces
                     if (Jeu.HasGoldKey)
                     {
                         Console.WriteLine("\nTu utilises la clé en or." +
-                                          "\nTu sors par la porte rouge.\nPourquoi t'es tu réveillée ici? Qui était la poupée que tu as tuée?" +
+                                          "\nTu sors par la porte rouge.\nPourquoi t'es-tu réveillée ici? Qui était la poupée que tu as tuée?" +
                                           "\nCe sont des questions pour plus tard. Enfin libre." +
                                           "\nTu es enfin sortie et pourtant, l'entité qui te terrifiait est encore présente." +
                                           "\nUne voix te dit que ce n'est pas fini, mais tu ne reconnais pas la voix." +
@@ -78,7 +78,7 @@ namespace BoucleBleue.Pièces
                     break;
                 case "sang":
                     Console.WriteLine("\nLe sang continue de couler des murs." +
-                                      "\nLe flot ne semble jamais arrêter." +
+                                      "\nLe flot ne semble jamais s'arrêter." +
                                       "\nUne goutte vole sur ta joue, et tu dis 'Beurk' à voix haute." +
                                       "\nLe sang sur le mur change de forme et tu crois reconnaître des lettres.");
                     Console.WriteLine("\nM");
@@ -98,11 +98,11 @@ namespace BoucleBleue.Pièces
                     Console.WriteLine("U");
                     Thread.Sleep(1000);
                     Console.WriteLine("I");
-                    Console.WriteLine("\nTu essaies de parler au mur. Mais il ne fait que répéter 'MEURS'...\nTu n'es pas certaine, mais tu crois que le mur attend quelque chose.\nPeut-être y a-t-il un mot qu'il aimerait entendre.");
+                    Console.WriteLine("\nTu essaies de parler au mur. Mais il ne fait que répéter 'MEURS'...\nTu n'es pas certaine, mais tu crois que le mur attend quelque chose.\nPeut-être y a-t-il un mot qu'il aimerait entendre?");
                     break;
                 case "boucle":
                     Console.WriteLine("\nEn disant le mot boucle, le sang coulant du mur s'éparpille sur tous les autres murs.\nBientôt, il coule même du plafond." +
-                                      "\nEnfin, après avoir été recouverte du sang, tu le vois se transformer en bleu.\nTout d'un coup, tout autour de toi est bleu. Les murs, les meubles, ta robe, la boucle dans tes cheveux, ... maintenant bleus." +
+                                      "\nEnfin, après avoir été recouvert du sang, tu le vois se transformer en bleu.\nTout d'un coup, tout autour de toi est bleu. Les murs, les meubles, ta robe, la boucle dans tes cheveux, ... maintenant bleus." +
                                       "\nTu ne te sens pas bien et tu t'évanouis.");
                     Console.WriteLine("\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 05: Vraie fin - - -");
                     Jeu.nextRoom = "Fin";

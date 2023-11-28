@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+BoucleBleue/bin/
+
+BoucleBleue/obj/
+
+BoucleBleue/
