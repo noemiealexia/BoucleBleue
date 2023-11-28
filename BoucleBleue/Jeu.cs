@@ -87,6 +87,11 @@ namespace BoucleBleue
                 }
             }
         }
+
+        internal static string RemoveDiacritics(string choice)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
   
