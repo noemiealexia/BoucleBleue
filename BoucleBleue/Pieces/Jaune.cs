@@ -50,13 +50,7 @@ namespace BoucleBleue.Pièces
                     Jeu.nextRoom = "Rose";
                     break;
                 case "oursons":
-                    if (Jeu.HasRedKey)
-                    {
-                        Console.WriteLine("\nTu t'agenouilles devant l'ourson bleu.");
-                        Console.WriteLine("\nPeluche: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.\nToi: Pourquoi as-tu fait ça peluche?! J'ai eu peur!\nPeluche: HAHAHAHAHAHAHAHAHAHAHAHA MEURS.\nPeu importe ce que tu essaies de dire à peluche, il ne fait que ricaner comme les autres peluches. Tu te relèves.");
-
-                    }
-                    else if (Jeu.HasKnife)
+                    if (Jeu.HasKnife)
                     {
                         Console.WriteLine("\nTu t'approches de Peluche avec ton couteau derrière le dos." +
                                           "\nLes oursons ricanent toujours. Lorsque Peluche se rend compte de ce que tu t'apprêtes de faire, il est trop tard." +
@@ -67,9 +61,13 @@ namespace BoucleBleue.Pièces
 
                         Console.WriteLine("\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 03: Mauvais choix  - - -");
                         Jeu.Fin03 = true;
-                        Console.Clear();
-                        Jeu.nextRoom = "Noire";
-                        Jeu.HasKnife = false;
+                        Jeu.isFinished = true;
+                    }
+                    else if (Jeu.HasRedKey)
+                    {
+                        Console.WriteLine("\nTu t'agenouilles devant l'ourson bleu.");
+                        Console.WriteLine("\nPeluche: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.\nToi: Pourquoi as-tu fait ça peluche?! J'ai eu peur!\nPeluche: HAHAHAHAHAHAHAHAHAHAHAHA MEURS.\nPeu importe ce que tu essaies de dire à peluche, il ne fait que ricaner comme les autres peluches. Tu te relèves.");
+
                     }
                     else
                     {

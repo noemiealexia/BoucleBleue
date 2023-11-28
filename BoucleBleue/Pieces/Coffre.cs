@@ -51,11 +51,7 @@ namespace BoucleBleue.Pièces
                     }
                     Console.WriteLine("\n\n\tJeu écrit par Noémie-Alexia Prévost et Kseniya Finchenko\n\t\t- - - FIN 01: POUR TOUJOURS - - -");
                     Jeu.Fin01 = true;
-                    Console.Clear();
-                    Jeu.nextRoom = "Rose";
-                    Jeu.HasBlueKey = false;
-                    Jeu.HasRedKey = false;
-                    Jeu.Tables = false;
+                    Jeu.isFinished = true;
                     break;
                 default:
                     Console.WriteLine("Commande invalide.");

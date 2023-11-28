@@ -94,19 +94,19 @@ class Program
         bool recommencer = true;
 
         //Play music
-        IWavePlayer wavePlayer = new WaveOutEvent();
-        WaveStream wavReader = new WaveFileReader(AppDomain.CurrentDomain.BaseDirectory + "..\\..\\..\\Music\\risesthemoon.wav");
-        LoopStream loop = new LoopStream(wavReader);
-        wavePlayer.Init(loop);
-        wavePlayer.Play();
+        //IWavePlayer wavePlayer = new WaveOutEvent();
+        //WaveStream wavReader = new WaveFileReader(AppDomain.CurrentDomain.BaseDirectory + "..\\..\\..\\Music\\risesthemoon.wav");
+        //LoopStream loop = new LoopStream(wavReader);
+        //wavePlayer.Init(loop);
+        //wavePlayer.Play();
 
         while (recommencer)
         {
-            //System.Diagnostics.Process.Start(new ProcessStartInfo
-            //{
-            //    FileName = "https://www.youtube.com/watch?v=MkAsMSG69MI",
-            //    UseShellExecute = true
-            //});
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://www.youtube.com/watch?v=MkAsMSG69MI",
+                UseShellExecute = true
+            });
 
             var game = new Jeu();
 
@@ -160,7 +160,7 @@ class Program
             }
 
 
-            Console.WriteLine("\n\n\t\tVOUS AVEZ DÉBLOQUÉ " + numberOfEndingAchieved + " FINS SUR 5.");
+            Console.WriteLine("\n\n\t\tVOUS AVEZ DÉBLOQUÉ " + numberOfEndingAchieved + " FIN(S) SUR 5.");
             Console.ReadLine();
             if (numberOfEndingAchieved == 5)
             {
