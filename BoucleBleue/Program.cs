@@ -135,6 +135,7 @@ class Program
                 string? choice = Console.ReadLine()?.ToLower() ?? "";
                 Console.Clear();
                 game.ReceiveChoice(choice);
+                game.ReceiveChoice(Jeu.RemoveDiacritics(choice));
                 game.CheckTransition();
             }
 
