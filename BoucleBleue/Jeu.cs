@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -88,10 +89,23 @@ namespace BoucleBleue
             }
         }
 
-        internal static string RemoveDiacritics(string choice)
+        internal static string RemoveDiacritics(string text)
         {
-            throw new NotImplementedException();
+            var normalizedString = text.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new StringBuilder();
+
+            foreach (var c in normalizedString.EnumerateRunes())
+            {
+                var unicodeCategory = Rune.GetUnicodeCategory(c);
+                if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
+
     }
 }
   
