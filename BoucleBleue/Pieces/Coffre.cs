@@ -29,7 +29,7 @@ namespace BoucleBleue.Pièces
                         "\nLe liquide noir continue de couler autour de toi, tu penses te noyer dedans." +
                         "\nTu te mets à crier." +
                         "\nToi: NON. NON. NON. NON. NON." +
-                        "\nLes peluches ouvrent le courvecle et te laisse sortir. Leur sourire est déstabilisant.");
+                        "\nLes peluches ouvrent le couvercle et te laisse sortir. Leur sourire est déstabilisant.");
                     Jeu.HasRedKey = true;
                     Jeu.nextRoom = "Jaune";
                     break;

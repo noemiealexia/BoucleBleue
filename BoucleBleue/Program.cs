@@ -190,11 +190,7 @@ class Program
                 Jeu.HasGreenKey = false;
                 Jeu.HasKnife = false;
                 Jeu.HasGoldKey = false;
-                Jeu.Fin01 = false;
-                Jeu.Fin02 = false;
-                Jeu.Fin03 = false;
-                Jeu.Fin04 = false;
-                Jeu.Fin05 = false;
+                numberOfEndingAchieved = 0;
                 Jeu.SeenEnigme = false;
                 Console.Clear();
             }
