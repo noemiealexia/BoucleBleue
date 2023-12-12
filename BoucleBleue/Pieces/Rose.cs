@@ -29,7 +29,7 @@ namespace BoucleBleue.Pièces
                 Console.WriteLine("\n\tTes yeux de poupée s'ouvrent sur une belle chambre rose. " +
                     "\n\tLa pièce est adornée de beaux meubles qui s'agencent aux murs roses." +
                     "\n\tÀ travers la pièce, de grandes fleurs vibrantes se reposent et des papillons s'excitent tout autour de toi." +
-                    "\n\tÀ ta droite se trouve une [porte jaune], devant toi une [porte bleue]\n");
+                    "\n\tÀ ta droite se trouve une [porte jaune], devant toi une [porte bleue] et une salle [devinette] \n");
 
             }
         }
@@ -38,6 +38,10 @@ namespace BoucleBleue.Pièces
         {
             switch (choice)
             {
+                case "devinette":
+                    Console.WriteLine("\nTu ouvres la porte et entres dans la pièce.");
+                    Jeu.nextRoom = "DevinetteKseniya";
+                    break;
                 case "porte bleue":
                     if (Jeu.HasBlueKey)
                     {

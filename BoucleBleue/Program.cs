@@ -120,6 +120,8 @@ class Program
             Room Coffre = new Coffre();
             Room Fin = new Fin();
 
+            Room DevinetteKseniya = new DevinetteKseniya();
+
             game.Add(Blanche);
             game.Add(Bleue);
             game.Add(Coffre);
@@ -127,6 +129,8 @@ class Program
             game.Add(Noire);
             game.Add(Rose);
             game.Add(Fin);
+
+            game.Add(DevinetteKseniya);
 
             game.SetCurrentRoom(Rose);
 
