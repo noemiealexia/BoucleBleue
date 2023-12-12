@@ -29,7 +29,7 @@ namespace BoucleBleue
         public static bool Fin04 = false;
         public static bool Fin05 = false;
         public static bool SeenEnigme = false;
-
+        public static int life = 3;
 
         public Jeu()
         {

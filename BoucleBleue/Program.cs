@@ -119,6 +119,7 @@ class Program
             Room Blanche = new Blanche();
             Room Coffre = new Coffre();
             Room Fin = new Fin();
+            Room Examen = new Examen();
 
             game.Add(Blanche);
             game.Add(Bleue);
@@ -127,6 +128,7 @@ class Program
             game.Add(Noire);
             game.Add(Rose);
             game.Add(Fin);
+            game.Add(Examen);
 
             game.SetCurrentRoom(Rose);
 
@@ -192,6 +194,7 @@ class Program
                 Jeu.HasGoldKey = false;
                 numberOfEndingAchieved = 0;
                 Jeu.SeenEnigme = false;
+                Jeu.life = 3;
                 Console.Clear();
             }
             else

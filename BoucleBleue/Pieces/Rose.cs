@@ -29,7 +29,8 @@ namespace BoucleBleue.Pièces
                 Console.WriteLine("\n\tTes yeux de poupée s'ouvrent sur une belle chambre rose. " +
                     "\n\tLa pièce est adornée de beaux meubles qui s'agencent aux murs roses." +
                     "\n\tÀ travers la pièce, de grandes fleurs vibrantes se reposent et des papillons s'excitent tout autour de toi." +
-                    "\n\tÀ ta droite se trouve une [porte jaune], devant toi une [porte bleue]\n");
+                    "\n\tÀ ta droite se trouve une [porte jaune], devant toi une [porte bleue]" +
+                    "\n\tOh! Attends! Il y a une nouvelle pièce qui vient d'apparaitre qui se nomme [examen]. Étrange.\n");
 
             }
         }
@@ -52,6 +53,9 @@ namespace BoucleBleue.Pièces
                 case "porte jaune":
                     Console.WriteLine("\nTu ouvres la porte et entres dans la pièce.");
                     Jeu.nextRoom = "Jaune";
+                    break;
+                case "examen":
+                    Jeu.nextRoom = "Examen";
                     break;
                 default:
                     Console.WriteLine("\nCommande invalide.");
