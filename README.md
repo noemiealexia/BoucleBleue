@@ -1,4 +1,5 @@
 # BoucleBleue
+Cours 420J17AS
 Kseniya Finchenko et Noémie-Alexia Prévost
 
 Description du jeu:
@@ -12,3 +13,4 @@ Mettez en place une surprise importante dans le jeu pour bouleverser le joueur (
 Minimum 5 salles bien détaillées (on les a, reste juste description pour les 2 dernières)
 
 Prenez note des mécaniques de jeu que vous voulez implémenter, mais qui nécessite mon aide (photo)
+
